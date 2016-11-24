@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+
+    <title>Awesome Form Complaints Or Suggestions Via E-mail - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style type="text/css">
+    body {
+    background-color:#f1f1f1;
+}
+
+div.center{
+    margin-left:400px;
+}
+
+    </style>
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
+        });
+    </script>
+</head>
+<body>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="http://dinus.org/assets/mail/mailtip.css"/>
+<script type="text/javascript" src="http://dinus.org/assets/mail/jquery.mailtip.js"></script>
+
+<div class="container">
+	<div class="row">
+		<center><h2>Awesome Form Complaints Or Suggestions Via E-mail</h2></center>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="col-md-12 row" style="padding:0px;margin-bottom:10px;">
+                            
+                            <div class="col-md-2">
+                                <img src="http://dinus.org/img/fakultas/FIK/cs/cs.svg">
+                                <div style="margin-left:30px;">
+                                    <img src="http://dinus.org/img/fakultas/FIK/cs/cs.png" width="70px" height="70px" class="img-circle" style="border:3px solid #052C52;">
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <hr>
+                                <p style="padding-left:55px;font-size:1.3em;"><strong>EMY ABRAHAM</strong></p>
+                                
+                            </div>
+                            
+                            
+                        </div>
+
+                        <form>
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <input type="email" class="form-control"  id="mailtip2" placeholder="Your e-mail">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="form-control" type="text" placeholder="Subject">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea class="form-control" rows="4" placeholder="Message text . . ."></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-danger btn-sm" style="width: 100%;"><i class="fa fa-envelope-o" style="padding-right: 5px;"></i> Send</button>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+	</div>
+</div>
+
+<!-- Created By : Nandang Mulyadi -->
+<div class="container">
+    <div class="row">
+        <center>
+            <footer>Dev : NAINIK SRAVAN <cite title="Source Title">Indonesia</cite></footer>
+            <p style="color:#b1b1b1;">
+                
+            </p>
+        </center>
+    </div>
+</div>
+
+	<script type="text/javascript">
+	$(function (){
+    var info = $('.info');
+    $('#mailtip2').mailtip({
+    onselected: function (mail){
+    info.text('you choosed email: ' + mail)
+    }
+    });
+});
+	</script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <script src="https://use.fontawesome.com/034feea29c.js"></script>
+        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+     
+        <style>
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+ .gap {
+  height: 30px;
+  width: 100%;
+  clear: both;
+  display: block;
+}
+.footer {
+  background: #EDEFF1;
+  height: auto;
+  padding-bottom: 30px;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid #DDDDDD;
+}
+.footer p {
+  margin: 0;
+}
+.footer img {
+  max-width: 100%;
+}
+.footer h3 {
+  border-bottom: 1px solid #BAC1C8;
+  color: #54697E;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  padding: 40px 0 10px;
+  text-transform: uppercase;
+}
+.footer ul {
+  font-size: 13px;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 15px;
+  color: #7F8C8D;
+}
+.footer ul li a {
+  padding: 0 0 5px 0;
+  display: block;
+}
+.footer a {
+  color: #78828D
+}
+.supportLi h4 {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: normal;
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+}
+.newsletter-box input#appendedInputButton {
+  background: #FFFFFF;
+  display: inline-block;
+  float: left;
+  height: 30px;
+  clear: both;
+  width: 100%;
+}
+.newsletter-box .btn {
+  border: medium none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  height: 40px;
+  padding: 0;
+  width: 100%;
+  color: #fff;
+}
+.newsletter-box {
+  overflow: hidden;
+}
+.bg-gray {
+  background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
+  box-shadow: 0 1px 0 #B4B3B3;
+}
+.social li {
+  background: none repeat scroll 0 0 #B5B5B5;
+  border: 2px solid #B5B5B5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 8px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 36px;
+  transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+.social li:hover {
+  transform: scale(1.15) rotate(360deg);
+  -webkit-transform: scale(1.1) rotate(360deg);
+  -moz-transform: scale(1.1) rotate(360deg);
+  -ms-transform: scale(1.1) rotate(360deg);
+  -o-transform: scale(1.1) rotate(360deg);
+}
+.social li a {
+  color: #EDEFF1;
+}
+.social li:hover {
+  border: 2px solid #2c3e50;
+  background: #2c3e50;
+}
+.social li a i {
+  font-size: 16px;
+  margin: 0 0 0 5px;
+  color: #EDEFF1 !important;
+}
+.footer-bottom {
+  background: #E3E3E3;
+  border-top: 1px solid #DDDDDD;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer-bottom p.pull-left {
+  padding-top: 6px;
+}
+.payments {
+  font-size: 1.5em; 
+}
+    </style>
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
+        });
+    </script>
+
+</style>
+   </head>
+
+
+
+   
+  <body background="01.jpg">
+  <div>
+<font color="GREEN";font size="20"><center>HEEL2TOE</font></div>
+            <div class="navbar-inverse navbar-fixed-center">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="0.jpg" class="img-rounded" height="30px"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="file:///C:/Users/LIA/Downloads/SHOES/Lia/about.html">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown">BRANDS <span class="fa fa-caret-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">MENS FOOTWEAR</a>
+                                        
+                                        
+                                        </span></a>
+                                
+                                    </li>
+                                    <li>
+                                        <a href="file:///C:/Users/LIA/Downloads/SHOES/Lia/WOMEN.html">WOMENS FOOTWEAR</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">KIDS FOOTWEAR</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                             </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="file:///C:/Users/LIA/Downloads/SHOES/Lia/login.html"> LOGIN</a>
+                            </li>
+                            <li>
+                                <a href="file:///C:/Users/LIA/Downloads/SHOES/Lia/reg.html">REGISTER</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+<p>ABOUT US</p>
+
+<p>Hi there Sole- mate, thanks for seeking us out and visiting our website! Ultimately we want you to be as relaxed and comfortable as your feet are sure to be when you make a purchase with us.</p>
+
+<p>We realise that shopping with a newly discovered company can be a bit of a daunting experience, so to put your mind at ease, let’s be friends, get to know us, this is who we are and what we do!</p>
+
+<p>We were born in 1971 in York, founded by Catherine Paver, an ambitious mum to be proud of, who took out a £200 bank loan (she told them for a sofa!) to fund her new business passion to find the perfect style for everyone’s feet.</p>
+
+<p>We started off small, at village halls and house parties, and through her desire to source and sell shoes that fit well and look great, our company began to grow. Cathy was later joined by her sons, Graham, Stuart (Managing Director) and Ian (Buying director), who have helped to nurture the family business and this desire, drive and passion to be a leader in stylish yet high quality comfort footwear.</p>
+
+<p>Our company Pavers Shoes is now one of the UK’s leading comfort shoe retailers, with a focus on quality with affordability. We opened our first shop in Scarborough then York, Hull and Newcastle soon followed!</p>
+
+<p>We’ve grown and grown, our dedicated buying team travel to the far ends of the world to source our fantastic footwear and now with over 115 outlets in the UK and Eire, you can pick up our very own comfort range, not forgetting your favourite brands such as Fly Flot, Skechers, Padders and many more. For the fashion conscious we also offer our Bellissimo brand, encompassing the latest trends of the season, our range features the most coveted designs, ensuring you find your perfect style!</p>
+
+<p><h3>THE SEARCH FOR THE PERFECT STYLE!</h3></p>
+
+<p>As a family owned company we appreciate good values, we believe that we should do the best that we possibly can for our customers, and be honest, reliable and trustworthy. We pride ourselves in delivering to all of our customers, whether visiting one of our stores, calling our head office customer service department or ordering online, “the Pavers Experience,” excellent value for money, great quality footwear, in pleasant surroundings and with exceptional service.</p>
+
+<p>Not only that but Pavers strives to make your shopping even more personal, no matter where in the world you live! Our amazing Omni-channel operation allows you, our valued customer the chance to shop however and whenever you choose. Some of us love to shop online, some of us like to buy through the post or through TV shopping channels and many of us just can’t resist a browse in a store.</p>
+
+<p>You can find our shoes and accessories all over the country and through our fantastic home shopping department – online, on TV and through our catalogue. We have shops all across the U.K and Ireland, so please check out our store locator, find out the closest shop to you and pop along for a bit of well earned retail therapy. If you’ve visited your local store before but not for a long while please pop back and have a look, as many of our stores have had a spruce up!</p>
+
+<p><h3>HEEL2TOE AND THE ENVIRONMENT</h3></p>
+
+<p>We’re very proud of our British heritage and so happy to still call York home, all of our head office departments are located here and we dispatch all of our shoes to our shops and direct to our customers from our base here in Yorkshire.</p>
+
+<p>Although everyone needs a little bit of a revamp once in a while and in October 2006 our head office and warehouse changed and grew to keep pace with us, our stomping ground is Catherine House, our eco friendly head office and state-of –the-art distribution centre and it’s not just our customer’s feet we’re worried about! It is our own as well, we’re very concerned about our carbon footprint and the effect we have on the environment.</p>
+
+<p>We understand that when we use energy we create carbon dioxide and other green house gases that change the climate. So at our head office we have the latest technology which allows us to give something back. In 2011 we installed a renewable energy system, placing solar panels onto our warehouse roof to generate some of our very own electricity, we can now generate 25% of the amount of the electricity we need in the head office and warehouse ourselves. We can put back into the grid and we use a motion- sensor energy efficient lighting and a rainwater collection system.</p>
+ <footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3><a href="#"> HOME</a> </h3>
+                     </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> SERVICES </h3>
+                    <ul>
+                        <li> <a href="#"> TERMS&CONDITIONS</a> </li>
+                        <li> <a href="#"> DELIVERY INFORMATION </a> </li>
+                        </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> ABOUT US </h3>
+                    <ul>
+                        <li> <a href="#"> HISTORY</a> </li>
+                        <li> <a href="#"> CONTACT </a> </li>
+                  </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> FAQ </h3>
+                    <ul>
+                        
+                        <li> <a href="file:///C:/Users/LIA/Downloads/SHOES/Lia/comp.html"> COMPLAINTS</a> </li>
+                        <li> <a href="#"> FEEDBACK</a> </li>
+                      
+                    </ul>
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                    <h3> HEEL2TOE </h3>
+                    <ul>
+                        <li>
+                            <div class="input-append newsletter-box text-center">
+                                <input type="text" class="full text-center" placeholder="Email ">
+                                <button class="btn  bg-gray" type="button"> HEEL2TOE<i class="fa fa-long-arrow-right"> </i> </button>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="social">
+                        <li> <a href="https://www.facebook.com/"> <i class=" fa fa-facebook">   </i> </a> </li>
+                        <li> <a href="https://twitter.com/"> <i class="fa fa-twitter">   </i> </a> </li>
+                        <li> <a href="https://plus.google.com/"> <i class="fa fa-google-plus">   </i> </a> </li>
+                        <li> <a href="https://www.pinterest.com/login/"> <i class="fa fa-pinterest">   </i> </a> </li>
+                        <li> <a href="https://www.youtube.com/"> <i class="fa fa-youtube">   </i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+    </div>
+    <!--/.footer-->
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left"> Copyright © Footer E-commerce Plugin 2014. All right reserved. </p>
+            <div class="pull-right">
+                <ul class="nav nav-pills payments">
+                  <li><i class="fa fa-cc-visa"></i></li>
+                    <li><i class="fa fa-cc-mastercard"></i></li>
+                    <li><i class="fa fa-cc-amex"></i></li>
+                    <li><i class="fa fa-cc-paypal"></i></li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+    <!--/.footer-bottom--> 
+</footer>
+ <script type="text/javascript">
+  
+  </script>
+</body>
+</html>
+
+
